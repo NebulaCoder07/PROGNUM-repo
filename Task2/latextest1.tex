@@ -1,0 +1,68 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage{graphicx}
+\usepackage{fullpage}
+\usepackage{listings}
+
+\lstset{numbers=left, numberstyle=\tiny, stepnumber=1, numbersep=5pt, language=python,
+showstringspaces=false, basicstyle=\small}
+
+%opening
+\title{Task1}
+\author{Vogelman}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+The results for task 5 which deals with Python components.
+\end{abstract}
+
+\section{Question 1}
+Here should be your answer
+etc. etc.
+\begin{math}
+B=\frac{1}{\pi\sqrt{a}}[0+x_{e}.\sqrt{a}\sqrt{\pi}\sqrt{\pi}-0]
+\end{math}
+%%$$
+%% \frac{n!}{k!(n-k)!} = \binom{n}{k}
+%%$$
+
+% Let's start to include a figure (must be a pdf file)
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=6cm]{parabola.pdf}
+  \caption{\it Example of a gaussian shaped source with fitted ellipse.
+           The ellipse follows the contour for which the pixel values are half
+           the maximum value. It has a major axis and a minor axis.
+           The angle between the major axis and the x axis is the rotation
+           angle $\theta$ of the ellipse. The position angle
+           $\varphi$ is equal to $90^o+\theta$.}
+  \label{fig:parabola}
+\end{figure} 
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=8cm]{ffts.png}
+  \caption{\it Fast Fourier transforms}
+  \label{fig:fft}
+\end{figure} 
+
+
+
+\begin{lstlisting}
+#!/usr/bin/env python
+import numpy
+import pyplot
+
+x = numpy.arange( 3,15, dtype='f')
+y = 2.0 * x + 3.0
+
+pyplot.plot(x,y)
+pyplot.savefig( 'plot.v1.png' )
+pyplot.show()
+\end{lstlisting}
+
+
+\end{document}
