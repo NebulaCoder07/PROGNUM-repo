@@ -1,7 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-
-def type_check(string):
+ def type_check(string):
     try:
         float(string)
         return True
@@ -23,8 +22,8 @@ A = inputs("A")
 x0 = inputs("x0")
 
 sig = inputs("𝜎")
-while sig == 0.0:
-    print("The standard deviation must not be 0")
+while sig <= 0.0:
+    print("The standard deviation must be > 0")
     sig = inputs("𝜎")
     
 z0 = inputs("z0")
